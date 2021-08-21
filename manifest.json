@@ -1,0 +1,23 @@
+{
+  "author": "igorlogius",
+  "description": "copy active tab url via pageAction or shortcut",
+  "icons": {
+  },
+  "background": {
+	"scripts": ["background.js"]
+  },
+  "manifest_version": 2,
+  "name": "copy-tab-url",
+  "page_action": {
+    "browser_style": true,
+    "show_matches": [
+      "<all_urls>"
+    ]
+  },
+  "permissions": [
+    "activeTab",
+    "clipboardWrite",
+    "notifications"
+  ],
+  "version": "1.0.0"
+}
