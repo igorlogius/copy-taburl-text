@@ -2,6 +2,7 @@
   "author": "igorlogius",
   "description": "copy active tab url via pageAction or shortcut",
   "icons": {
+    "48": "icons/icons.png"
   },
   "background": {
 	"scripts": ["background.js"]
@@ -13,7 +14,7 @@
     "show_matches": [
       "<all_urls>"
     ],
-    "default_icon": "icons/icon.png"
+    "default_icon": "icons/icons.png"
   },
   "permissions": [
     "activeTab",
