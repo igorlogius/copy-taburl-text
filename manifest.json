@@ -13,7 +13,7 @@
     "show_matches": [
       "<all_urls>"
     ],
-    "default_icon": "icons/icons8-copy-link-26.png"
+    "default_icon": "icons/icon.png"
   },
   "permissions": [
     "activeTab",
