@@ -8,7 +8,7 @@ browser.pageAction.onClicked.addListener((tab) => {
 
 	browser.notifications.create(extname, {
 		"type": "basic",
-		//"iconUrl": browser.runtime.getURL("icon.png"),
+		"iconUrl": browser.runtime.getURL("icon.png"),
 		"title": extname,
 		"message":  'copied url to clipboard' 
 	});
