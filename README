@@ -1,5 +1,3 @@
 #!/bin/bash
 export AMO='https://addons.mozilla.org/en-US/firefox/addon/copy-taburl' 
 curl 'https://raw.githubusercontent.com/igorlogius/meta-addon-builder/main/README' | sh
-
-icon get from https://icons8.com/icon/722/copy-link
