@@ -3,8 +3,7 @@ async function onLoad() {
     try {
         const msg = document.getElementById('msg');
         const body = document.querySelector('body');
-        let tmp = await browser.runtime.sendMessage({currentWindow: true, active: true});
-        await navigator.clipboard.writeText(tmp);
+        await browser.runtime.sendMessage({});
         msg.innerText = " Copied URL ";
         body.style.backgroundColor = 'lightgreen';
         setTimeout(window.close, 600);

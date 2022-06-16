@@ -1,13 +1,8 @@
 /* global browser */
-async function onMessage(data /*, sender*/) {
-    try {
-        let tmp  = await browser.tabs.query(data);
-        tmp = tmp[0];
-        return Promise.resolve(tmp.url);
-    }catch(e){
-        console.error(e);
-    }
-    return false;
+async function onMessage(/*data , sender*/) {
+    const data = {currentWindow: true, active: true};
+    const tabs  = await browser.tabs.query(data);
+    return navigator.clipboard.writeText(tabs[0].url);
 }
 
 browser.runtime.onMessage.addListener(onMessage);
