@@ -1,5 +1,5 @@
-
-async function onMessage(data, sender) {
+/* global browser */
+async function onMessage(data /*, sender*/) {
     try {
         let tmp  = await browser.tabs.query(data);
         tmp = tmp[0];

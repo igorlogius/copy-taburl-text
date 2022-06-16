@@ -1,4 +1,4 @@
-
+/* global browser */
 async function onLoad() {
     try {
         const msg = document.getElementById('msg');
